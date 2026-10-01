@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ขั้นตอนการชำระเงิน | มจพ.</title>
+	<link rel="stylesheet" href="../style/styec.css">
+	<link rel="stylesheet" href="../style/media.css">
+	<link rel="stylesheet" href="../style/form.css">
+</head>
+<body class="payment-page">
+	 <header>
+        <img src="../image/logo_kmutnb-(6).png" alt="">
+        <div class="university-name">
+            <h3>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h3>
+            <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="main-menu">
+			<li><a href="../index.html">หน้าแรก</a></li>
+            <li><a href="../web/Organization.html">เรื่องราว</a></li>
+            <li class="dropdown">
+                <a href="#">ประวัติที่เกี่ยวข้องกับ มจพ. ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="story.html">มจพ.กรุงเทพ</a></li>
+                    <li><a href="story2.html">มจพ.ปราจีน</a></li>
+                    <li><a href="story3.html">มจพ.ระยอง</a></li>
+
+                </ul>
+            </li>
+            <li><a href="apply.html">รับนักศึกษาใหม่</a></li>
+            <li><a href="price.html" aria-current="page">วิธีชำระเงิน</a></li>
+        </ul>
+    </nav>
+
+	<main class="payment-main">
+		<div class="payment-intro">
+			<div class="payment-intro-copy">
+				<p class="payment-eyebrow">ADMISSION PAYMENT</p>
+				<h1>ขั้นตอนการชำระเงินค่าสมัคร</h1>
+				<p>เลือกช่องทางที่ระบบสมัครเรียนรองรับ และตรวจสอบข้อมูลกับยอดชำระทุกครั้งก่อนยืนยัน</p>
+			</div>
+			<div class="payment-print-actions">
+				<button class="payment-print-button" id="print-online-payment" type="button">พิมพ์วิธีชำระเงินออนไลน์</button>
+				<a class="payment-print-button" href="summary.html?print=bank">พิมพ์ใบชำระเงินผ่านธนาคาร</a>
+			</div>
+		</div>
+
+		<section class="payment-receipt online-payment-breakdown" aria-labelledby="online-receipt-title" hidden>
+			<div class="payment-receipt-brand">
+				<img class="receipt-logo" src="../image/logo_kmutnb-(6).png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+				<div>
+					<h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+					<p lang="en">KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+				</div>
+			</div>
+			<h2 id="online-receipt-title">ใบแจ้งชำระเงินออนไลน์</h2>
+			<table class="payment-receipt-table">
+				<tbody id="online-payment-breakdown"></tbody>
+			</table>
+			<p class="payment-receipt-note">ใบแจ้งนี้เป็นข้อมูลจำลอง โปรดตรวจสอบยอดและรายละเอียดในระบบรับสมัครก่อนชำระเงินจริง</p>
+		</section>
+
+		<section class="payment-section online-payment-guide" aria-labelledby="payment-methods-title">
+			<h2 class="payment-section-title" id="payment-methods-title">ช่องทางการชำระเงินออนไลน์</h2>
+			<div class="payment-methods">
+				<article class="payment-method">
+					<div class="payment-method-heading">
+						<span class="payment-method-number">01</span>
+						<h3>สแกน QR Code / PromptPay</h3>
+					</div>
+					<p>หลังส่งใบสมัคร ระบบจะแสดง QR Code หรือใบแจ้งชำระเงิน เปิดแอป Mobile Banking เพื่อสแกนและชำระตามยอดที่ระบุ</p>
+					<p class="payment-method-note">สะดวก และโดยทั่วไปไม่มีค่าธรรมเนียม ทั้งนี้ให้ตรวจสอบเงื่อนไขที่ระบบแสดง</p>
+				</article>
+
+				<article class="payment-method">
+					<div class="payment-method-heading">
+						<span class="payment-method-number">02</span>
+						<h3>บัตรเดบิต / บัตรเครดิต</h3>
+					</div>
+					<p>ใช้บัตร Visa, Mastercard หรือ JCB หากรองรับ กรอกหมายเลขบัตร วันหมดอายุ และ CVV/CVC ในหน้าชำระเงิน</p>
+					<p class="payment-method-note">ยืนยันรายการด้วย OTP ตามขั้นตอนของธนาคาร อย่าแจ้ง OTP หรือรหัสหลังบัตรแก่ผู้อื่น</p>
+				</article>
+
+				<article class="payment-method">
+					<div class="payment-method-heading">
+						<span class="payment-method-number">03</span>
+						<h3>กระเป๋าเงินออนไลน์ (E-Wallet)</h3>
+					</div>
+					<p>เลือกใช้ TrueMoney Wallet, ShopeePay หรือกระเป๋าเงินออนไลน์อื่น เฉพาะรายการที่แสดงว่าระบบรองรับ</p>
+				</article>
+
+			</div>
+		</section>
+
+		<section class="online-payment-action" aria-labelledby="online-payment-action-title">
+			<p class="payment-eyebrow">ONLINE PAYMENT</p>
+			<h2 id="online-payment-action-title">ชำระเงินออนไลน์</h2>
+			<p>ผู้สมัคร: <strong id="online-payment-name">ไม่ได้ระบุ</strong></p>
+			<p>คณะ: <strong id="online-payment-faculty">ไม่ได้ระบุ</strong></p>
+			<p>ภาควิชา: <strong id="online-payment-department">ไม่ได้ระบุ</strong></p>
+			<p>สาขา: <strong id="online-payment-program">ไม่ได้ระบุ</strong></p>
+			<p>ยอดที่ต้องชำระ: <strong id="online-payment-amount">ไม่พบข้อมูลค่าเทอม</strong></p>
+			<button class="application-button" id="start-online-payment" type="button" aria-expanded="false" aria-controls="online-qr-panel">ชำระเงิน</button>
+			<div class="online-qr-panel" id="online-qr-panel" hidden>
+				<h3 id="online-qr-title" tabindex="-1">สแกน QR Code เพื่อชำระเงิน</h3>
+				<img src="../image/qrcode_408420010_be83c16d4e8a852d6fabfd80141ddff8.png" alt="QR Code สำหรับชำระเงินจำลอง">
+				<p>ผู้สมัคร: <strong id="online-qr-name">ไม่ได้ระบุ</strong></p>
+				<p>คณะ: <strong id="online-qr-faculty">ไม่ได้ระบุ</strong></p>
+				<p>ภาควิชา: <strong id="online-qr-department">ไม่ได้ระบุ</strong></p>
+				<p>สาขา: <strong id="online-qr-program">ไม่ได้ระบุ</strong></p>
+				<p>ยอดที่ต้องชำระ: <strong id="online-qr-amount">ไม่พบข้อมูลค่าเทอม</strong></p>
+				<p class="mock-payment-note">การชำระเงินนี้เป็นการจำลอง ไม่มีการตัดเงินจริง</p>
+				<button class="application-button" id="online-complete-payment" type="button">ชำระเงินเสร็จสิ้น</button>
+			</div>
+		</section>
+
+		<section class="payment-section bank-payment-guide" aria-labelledby="bank-payment-guide-title">
+			<h2 class="payment-section-title" id="bank-payment-guide-title">ชำระเงินผ่านธนาคาร</h2>
+			<article class="payment-method">
+				<div class="payment-method-heading">
+					<span class="payment-method-number">01</span>
+					<h3>Internet Banking / จ่ายบิล</h3>
+				</div>
+				<p>ใช้เมนู “จ่ายบิล (Bill Payment)” ในแอปธนาคารหรือช่องทางที่ระบุ โดยกรอก Ref. 1 (เลขบัตรประชาชนหรือเลขผู้สมัคร) และ Ref. 2 (รหัสการชำระเงิน) ให้ถูกต้อง</p>
+				<p class="payment-method-note">พิมพ์ใบแจ้งค่าใช้จ่ายเฉพาะผู้สมัครจากปุ่ม “พิมพ์ใบชำระเงินผ่านธนาคาร” ด้านบน</p>
+			</article>
+		</section>
+
+		<section class="payment-section online-payment-guide" aria-labelledby="payment-steps-title">
+			<h2 class="payment-section-title" id="payment-steps-title">ชำระเงินอย่างไร</h2>
+			<ol class="payment-steps">
+				<li>
+					<span class="payment-step-number">1</span>
+					<div><h3>เข้าสู่ระบบสมัครเรียน</h3><p>เลือกเมนู “พิมพ์ใบชำระเงิน” หรือ “ชำระเงินออนไลน์”</p></div>
+				</li>
+				<li>
+					<span class="payment-step-number">2</span>
+					<div><h3>เลือกช่องทางชำระ</h3><p>เลือก QR Code, บัตร หรือช่องทางอื่นที่ระบบเปิดให้ใช้</p></div>
+				</li>
+				<li>
+					<span class="payment-step-number">3</span>
+					<div><h3>ตรวจสอบข้อมูลก่อนยืนยัน</h3><p>เช็กชื่อ-นามสกุลผู้สมัคร ยอดเงิน และกำหนดเวลาชำระให้ถูกต้อง</p></div>
+				</li>
+				<li>
+					<span class="payment-step-number">4</span>
+					<div><h3>เก็บหลักฐานการชำระเงิน</h3><p>บันทึกสลิปหรือใบเสร็จไว้จนกว่าจะได้รับการยืนยันสิทธิ์</p></div>
+				</li>
+				<li>
+					<span class="payment-step-number">5</span>
+					<div><h3>กลับไปตรวจสอบสถานะ</h3><p>เช็กสถานะในระบบสมัครเรียนหลังชำระเงิน ระยะเวลาอัปเดตขึ้นอยู่กับระบบและธนาคาร โดยทั่วไปอาจใช้เวลา 1–3 วันทำการ</p></div>
+				</li>
+			</ol>
+		</section>
+
+		<aside class="payment-notice" aria-labelledby="payment-notice-title">
+			<h2 id="payment-notice-title">ข้อควรระวัง</h2>
+			<ul>
+				<li>ชำระภายในวันและเวลาปิดรับชำระที่ระบุในระบบ บางช่องทางอาจปิดรับก่อนเที่ยงคืน</li>
+				<li>เก็บหลักฐานการชำระเงินไว้จนกว่าสถานะจะได้รับการยืนยัน</li>
+				<li>กำหนดการ ค่าธรรมเนียม และช่องทางที่รองรับอาจแตกต่างกัน ให้ยึดข้อมูลในระบบสมัครเรียนเป็นหลัก</li>
+			</ul>
+		</aside>
+	</main>
+	<section class="payment-success-screen" id="payment-success-screen" role="dialog" aria-modal="true" aria-labelledby="payment-success-title" hidden>
+		<div class="payment-success-content">
+			<span class="payment-success-check" aria-hidden="true">✓</span>
+			<h1 id="payment-success-title" tabindex="-1">ชำระเสร็จสิ้น</h1>
+			<p>การชำระเงินนี้เป็นการจำลอง ไม่มีการตัดเงินจริง</p>
+			<p>กำลังกลับหน้าหลักใน <strong id="payment-countdown">3</strong> วินาที</p>
+		</div>
+	</section>
+	<script src="../JS/from.js"></script>
+	<script>
+		document.querySelector("#print-online-payment")?.addEventListener("click", () => {
+			const onlineReceipt = document.querySelector(".online-payment-breakdown");
+			onlineReceipt.hidden = false;
+			document.body.classList.add("print-online-payment");
+			window.print();
+			document.body.classList.remove("print-online-payment");
+			onlineReceipt.hidden = true;
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติข้อมูลผู้สมัคร | มจพ.</title>
+    <link rel="stylesheet" href="../style/styec.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/form.css">
+</head>
+<body class="application-page">
+    <header>
+        <img src="../image/logo_kmutnb-(6).png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+        <div class="university-name">
+            <h3>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h3>
+            <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+        </div>
+    </header>
+
+    <nav aria-label="เมนูหลัก">
+        <ul class="main-menu">
+            <li><a href="../index.html">หน้าแรก</a></li>
+            <li><a href="Organization.html">เรื่องราว</a></li>
+            <li class="dropdown">
+                <a href="#">ประวัติที่เกี่ยวข้องกับ มจพ. ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="story.html">มจพ.กรุงเทพ</a></li>
+                    <li><a href="story2.html">มจพ.ปราจีน</a></li>
+                    <li><a href="story3.html">มจพ.ระยอง</a></li>
+                </ul>
+            </li>
+            <li><a href="apply.html" aria-current="page">รับนักศึกษาใหม่</a></li>
+            <li><a href="price.html">วิธีชำระเงิน</a></li>
+        </ul>
+    </nav>
+
+    <main class="application-main">
+        <div class="application-heading">
+            <h1>ประวัติข้อมูลผู้สมัคร</h1>
+            <p>รวบรวมข้อมูลจากขั้นตอนการศึกษา ข้อมูลผู้สมัคร และข้อมูลผู้ปกครอง</p>
+        </div>
+
+        <p class="summary-empty" id="summary-file-note">กดลิงก์ชื่อไฟล์เพื่อเปิดดูรูปหรือเอกสารแนบ ข้อมูลเก็บอยู่ในเบราว์เซอร์นี้เท่านั้น</p>
+        <div class="application-summary" id="application-summary" aria-live="polite"></div>
+
+        <div class="summary-actions">
+            <a class="application-button application-button--secondary" href="apply3.html">กลับไปแก้ไข</a>
+            <a class="application-button" href="price.html">ไปหน้าชำระเงิน</a>
+        </div>
+    </main>
+    <dialog class="application-image-dialog" id="application-image-dialog" aria-labelledby="application-image-dialog-title">
+        <div class="application-image-dialog-heading">
+            <h2 id="application-image-dialog-title">ดูรูปภาพเอกสารแนบ</h2>
+            <button class="application-button application-button--secondary" id="close-application-image" type="button">ปิด</button>
+        </div>
+        <img id="application-image-dialog-image" alt="">
+        <p id="application-image-dialog-caption"></p>
+    </dialog>
+    <script src="../JS/from.js"></script>
+</body>
+</html>

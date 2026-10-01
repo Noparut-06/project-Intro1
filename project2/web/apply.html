@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลการศึกษาเดิม | มจพ.</title>
+    <link rel="stylesheet" href="../style/styec.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/form.css">
+</head>
+<body class="application-page">
+    <header>
+        <img src="../image/logo_kmutnb-(6).png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+        <div class="university-name">
+            <h3>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h3>
+            <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+        </div>
+    </header>
+
+    <nav aria-label="เมนูหลัก">
+        <ul class="main-menu">
+            <li><a href="../index.html">หน้าแรก</a></li>
+            <li><a href="Organization.html">เรื่องราว</a></li>
+            <li class="dropdown">
+                <a href="#">ประวัติที่เกี่ยวข้องกับ มจพ. ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="story.html">มจพ.กรุงเทพ</a></li>
+                    <li><a href="story2.html">มจพ.ปราจีน</a></li>
+                    <li><a href="story3.html">มจพ.ระยอง</a></li>
+                </ul>
+            </li>
+            <li><a href="apply.html" aria-current="page">รับนักศึกษาใหม่</a></li>
+            <li><a href="price.html">วิธีชำระเงิน</a></li>
+        </ul>
+    </nav>
+
+    <main class="application-main">
+        <ol class="application-steps" aria-label="ลำดับการสมัคร">
+            <li><a href="apply.html" aria-current="step">1. การศึกษาเดิม</a></li>
+            <li><a href="apply2.html">2. ข้อมูลผู้สมัคร</a></li>
+            <li><a href="apply3.html">3. ผู้ปกครอง</a></li>
+        </ol>
+
+        <div class="application-heading">
+            <h1>ข้อมูลการศึกษาเดิม</h1>
+            <p>กรอกข้อมูลจากโรงเรียนหรือสถาบันเดิม เพื่อใช้ตรวจสอบวุฒิและคุณสมบัติของผู้สมัคร</p>
+        </div>
+
+        <form class="application-form" method="post" enctype="multipart/form-data" data-application-step="education" data-next-page="apply2.html">
+            <fieldset>
+                <legend>ประวัติการศึกษา</legend>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="previous-school">ชื่อโรงเรียน / สถาบันการศึกษาเดิม</label>
+                        <input class="form-control" id="previous-school" name="previous_school" type="text" autocomplete="organization" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="school-province">จังหวัดของโรงเรียนเดิม</label>
+                        <input class="form-control" id="school-province" name="school_province" type="text" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="qualification">วุฒิการศึกษาที่สำเร็จ / กำลังศึกษา</label>
+                        <select class="form-control" id="qualification" name="qualification" required>
+                            <option value="">เลือกวุฒิการศึกษา</option>
+                            <option>กำลังศึกษา ม.6</option>
+                            <option>ม.6</option>
+                            <option>ปวช.</option>
+                            <option>ปวส.</option>
+                            <option>เทียบเท่า / อื่น ๆ</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="study-track">สายการเรียน / สาขาวิชา</label>
+                        <input class="form-control" id="study-track" name="study_track" type="text" placeholder="เช่น วิทย์-คณิต, คอมพิวเตอร์ธุรกิจ" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>ผลการเรียน</legend>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="gpax">เกรดเฉลี่ยสะสม (GPAX)</label>
+                        <input class="form-control" id="gpax" name="gpax" type="number" min="0" max="4" step="0.01" placeholder="เช่น 3.50" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="graduation-year">ปีการศึกษาที่สำเร็จการศึกษา</label>
+                        <input class="form-control" id="graduation-year" name="graduation_year" type="number" min="2500" max="2600" step="1" placeholder="เช่น 2568" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>แนบเอกสารหลักฐาน</legend>
+                <div class="form-grid">
+                    <div class="form-field form-field--full">
+                        <label for="transcript">ใบแสดงผลการเรียน (ปพ.1 / Transcript)</label>
+                        <input class="form-control" id="transcript" name="transcript" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+                        <p class="form-hint">รองรับไฟล์ PDF หรือรูปภาพ</p>
+                    </div>
+                    <div class="form-field form-field--full">
+                        <label for="enrollment-certificate">ใบรับรองสถานะการศึกษา (ปพ.7) กรณีที่ยังไม่จบ</label>
+                        <input class="form-control" id="enrollment-certificate" name="enrollment_certificate" type="file" accept=".pdf,.jpg,.jpeg,.png">
+                        <p class="form-hint">แนบเมื่อยังศึกษาไม่จบหรือสถาบันกำหนดให้ใช้</p>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="application-actions">
+                <a class="application-button application-button--secondary" href="../index.html">กลับหน้าหลัก</a>
+                <div class="application-action-group">
+                    <button class="application-button application-button--secondary" type="button" data-reset-application>รีเซ็ตข้อมูล</button>
+                    <button class="application-button" type="submit">หน้าถัดไป: ข้อมูลผู้สมัคร</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="../JS/from.js"></script>
+</body>
+</html>

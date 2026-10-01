@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สรุปข้อมูลการสมัคร | มจพ.</title>
+    <link rel="stylesheet" href="../style/styec.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="../style/form.css">
+</head>
+<body class="application-page">
+    <header>
+        <img src="../image/logo_kmutnb-(6).png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+        <div class="university-name">
+            <h3>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h3>
+            <p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+        </div>
+    </header>
+
+    <nav aria-label="เมนูหลัก">
+        <ul class="main-menu">
+            <li><a href="../index.html">หน้าแรก</a></li>
+            <li><a href="Organization.html">เรื่องราว</a></li>
+            <li class="dropdown">
+                <a href="#">ประวัติที่เกี่ยวข้องกับ มจพ. ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="story.html">มจพ.กรุงเทพ</a></li>
+                    <li><a href="story2.html">มจพ.ปราจีน</a></li>
+                    <li><a href="story3.html">มจพ.ระยอง</a></li>
+                </ul>
+            </li>
+            <li><a href="apply.html" aria-current="page">รับนักศึกษาใหม่</a></li>
+            <li><a href="price.html">วิธีชำระเงิน</a></li>
+        </ul>
+    </nav>
+
+    <main class="application-main">
+        <div class="application-heading">
+            <h1>ใบแจ้งค่าใช้จ่ายการศึกษา</h1>
+            <p>ตรวจสอบข้อมูลหลักสูตรและค่าเทอมก่อนพิมพ์ ข้อมูลนี้จัดเก็บไว้ชั่วคราวในแท็บปัจจุบัน</p>
+        </div>
+
+        <section class="payment-receipt" aria-labelledby="payment-receipt-title">
+            <div class="payment-receipt-brand">
+                <img class="receipt-logo" src="../image/logo_kmutnb-(6).png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+                <div>
+                    <h2>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h2>
+                    <p lang="en">KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+                </div>
+            </div>
+            <div class="payment-receipt-topline">
+                <h2 id="payment-receipt-title">รายละเอียดใบแจ้งค่าใช้จ่าย</h2>
+                <button class="application-button" id="print-payment-receipt" type="button">พิมพ์ใบชำระเงิน</button>
+            </div>
+            <table class="payment-receipt-table">
+                <tbody id="payment-receipt-details"></tbody>
+                <tbody class="bank-payment-details">
+                    <tr class="bank-payment-heading">
+                        <th colspan="2" scope="colgroup">
+                            <span>DEMO PAYMENT</span>
+                            <strong>ชำระเงินผ่านธนาคาร</strong>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">ผู้สมัคร</th>
+                        <td><strong id="payment-applicant-name">ไม่ได้ระบุ</strong></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ยอดที่ต้องชำระ</th>
+                        <td><strong id="payment-amount">ไม่พบข้อมูลค่าเทอม</strong></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">สถานะ</th>
+                        <td class="bank-payment-status">รายการชำระเงินจำลอง ไม่มีการตัดเงินจริง</td>
+                    </tr>
+                    <tr class="bank-payment-action">
+                        <th scope="row">เอกสาร</th>
+                        <td><button class="application-button" id="download-bank-payment-pdf" type="button">ดาวน์โหลด PDF</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="payment-receipt-note">ค่าเทอมและรายละเอียดนี้อ้างอิงจากข้อมูลหลักสูตรที่ได้รับ โปรดตรวจสอบประกาศล่าสุดกับมหาวิทยาลัยก่อนชำระเงินจริง และยอดนี้อาจไม่รวมค่าธรรมเนียมอื่น</p>
+        </section>
+
+        <details class="application-summary-details">
+            <summary>ดูข้อมูลทั้งหมดจากใบสมัคร</summary>
+            <p class="summary-empty" id="summary-file-note">กดลิงก์ชื่อไฟล์เพื่อเปิดดูรูปหรือเอกสารแนบ ข้อมูลเก็บอยู่ในเบราว์เซอร์นี้เท่านั้น</p>
+            <div class="application-summary" id="application-summary" aria-live="polite"></div>
+        </details>
+
+        <div class="summary-actions">
+            <a class="application-button application-button--secondary" href="apply3.html">ย้อนกลับไปแก้ไข</a>
+            <button class="application-button application-button--secondary" id="clear-application" type="button">ล้างข้อมูลที่บันทึกไว้</button>
+        </div>
+    </main>
+    <section class="payment-success-screen" id="payment-success-screen" role="dialog" aria-modal="true" aria-labelledby="payment-success-title" hidden>
+        <div class="payment-success-content">
+            <span class="payment-success-check" aria-hidden="true">✓</span>
+            <h1 id="payment-success-title" tabindex="-1">ชำระเงินเสร็จสิ้น</h1>
+            <p>การชำระเงินนี้เป็นการจำลอง ไม่มีการตัดเงินจริง</p>
+            <p>กำลังกลับหน้าหลักใน <strong id="payment-countdown">3</strong> วินาที</p>
+        </div>
+    </section>
+    <script src="../JS/from.js"></script>
+</body>
+</html>

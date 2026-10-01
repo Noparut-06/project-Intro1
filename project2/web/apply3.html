@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ข้อมูลผู้ปกครอง | มจพ.</title>
+	<link rel="stylesheet" href="../style/styec.css">
+	<link rel="stylesheet" href="../style/media.css">
+	<link rel="stylesheet" href="../style/form.css">
+</head>
+<body class="application-page">
+	<header>
+		<img src="../image/logo_kmutnb-(6).png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+		<div class="university-name">
+			<h3>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h3>
+			<p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+		</div>
+	</header>
+
+	<nav aria-label="เมนูหลัก">
+		<ul class="main-menu">
+			<li><a href="../index.html">หน้าแรก</a></li>
+			<li><a href="Organization.html">เรื่องราว</a></li>
+			<li class="dropdown">
+				<a href="#">ประวัติที่เกี่ยวข้องกับ มจพ. ▾</a>
+				<ul class="dropdown-menu">
+					<li><a href="story.html">มจพ.กรุงเทพ</a></li>
+					<li><a href="story2.html">มจพ.ปราจีน</a></li>
+					<li><a href="story3.html">มจพ.ระยอง</a></li>
+				</ul>
+			</li>
+			<li><a href="apply.html" aria-current="page">รับนักศึกษาใหม่</a></li>
+			<li><a href="price.html">วิธีชำระเงิน</a></li>
+		</ul>
+	</nav>
+
+	<main class="application-main">
+		<ol class="application-steps" aria-label="ลำดับการสมัคร">
+			<li><a href="apply.html">1. การศึกษาเดิม</a></li>
+			<li><a href="apply2.html">2. ข้อมูลผู้สมัคร</a></li>
+			<li><a href="apply3.html" aria-current="step">3. ผู้ปกครอง</a></li>
+		</ol>
+
+		<div class="application-heading">
+			<h1>ข้อมูลผู้ปกครองที่ติดต่อได้</h1>
+			<p>ระบุผู้ที่สามารถติดต่อได้ในกรณีฉุกเฉินหรือเพื่อยืนยันข้อมูลการสมัคร</p>
+		</div>
+
+		<form class="application-form" method="post" data-application-step="guardian" data-next-page="applicant-history.html">
+			<fieldset>
+				<legend>ข้อมูลทั่วไปของผู้ปกครอง</legend>
+				<div class="form-grid">
+					<div class="form-field">
+						<label for="guardian-relationship">ความสัมพันธ์กับผู้สมัคร</label>
+						<select class="form-control" id="guardian-relationship" name="guardian_relationship" required>
+							<option value="">เลือกความสัมพันธ์</option>
+							<option>บิดา</option>
+							<option>มารดา</option>
+							<option>ผู้ปกครอง</option>
+							<option>ญาติ</option>
+							<option>อื่น ๆ</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<label for="guardian-prefix">คำนำหน้าชื่อ</label>
+						<select class="form-control" id="guardian-prefix" name="guardian_prefix" required>
+							<option value="">เลือกคำนำหน้า</option>
+							<option>นาย</option>
+							<option>นาง</option>
+							<option>นางสาว</option>
+							<option>อื่น ๆ</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<label for="guardian-first-name">ชื่อ</label>
+						<input class="form-control" id="guardian-first-name" name="guardian_first_name" type="text" autocomplete="given-name" required>
+					</div>
+					<div class="form-field">
+						<label for="guardian-last-name">นามสกุล</label>
+						<input class="form-control" id="guardian-last-name" name="guardian_last_name" type="text" autocomplete="family-name" required>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>ข้อมูลการติดต่อ</legend>
+				<div class="form-grid">
+					<div class="form-field">
+						<label for="guardian-phone">เบอร์โทรศัพท์มือถือ</label>
+						<input class="form-control" id="guardian-phone" name="guardian_phone" type="tel" autocomplete="tel" required>
+					</div>
+					<div class="form-field">
+						<label for="guardian-alternative">เบอร์โทรศัพท์สำรอง / Line ID</label>
+						<input class="form-control" id="guardian-alternative" name="guardian_alternative_contact" type="text">
+					</div>
+					<div class="form-field form-field--full">
+						<label for="guardian-email">อีเมล (ถ้ามี)</label>
+						<input class="form-control" id="guardian-email" name="guardian_email" type="email" autocomplete="email">
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>อาชีพและที่อยู่</legend>
+				<div class="form-grid">
+					<div class="form-field">
+						<label for="guardian-occupation">อาชีพ</label>
+						<input class="form-control" id="guardian-occupation" name="guardian_occupation" type="text" required>
+					</div>
+					<div class="form-field">
+						<label for="guardian-workplace">สถานที่ทำงาน</label>
+						<input class="form-control" id="guardian-workplace" name="guardian_workplace" type="text">
+					</div>
+					<div class="form-field form-field--full">
+						<label class="form-checkbox" for="guardian-same-address">
+							<input id="guardian-same-address" name="guardian_same_address" type="checkbox" value="yes">
+							<span>ที่อยู่เดียวกับผู้สมัคร</span>
+						</label>
+						<p class="form-hint">หากเลือกช่องนี้ ให้เว้นช่องที่อยู่ผู้ปกครองไว้</p>
+					</div>
+					<div class="form-field form-field--full">
+						<label for="guardian-address">ที่อยู่ของผู้ปกครอง (บ้านเลขที่ หมู่ ถนน ตำบล/แขวง อำเภอ/เขต จังหวัด และรหัสไปรษณีย์)</label>
+						<textarea class="form-control" id="guardian-address" name="guardian_address" autocomplete="street-address"></textarea>
+					</div>
+				</div>
+				<div>
+					<label for="guardian-house-registration-copy">สำเนาทะเบียนบ้านผู้ปกครอง</label>
+					<input class="form-control" id="guardian-house-registration-copy" name="guardian_house_registration_copy" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+				</div>
+                <div>
+					<label for="guardian-identity-copy">สำเนาบัตรประชาชนผู้ปกครอง</label>
+					<input class="form-control" id="guardian-identity-copy" name="guardian_identity_copy" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+				</div>
+                    
+			</fieldset>
+
+			<div class="application-actions">
+				<a class="application-button application-button--secondary" href="apply2.html">ย้อนกลับ</a>
+				<button class="application-button" type="submit">เสร็จสิ้น</button>
+			</div>
+		</form>
+	</main>
+	<script src="../JS/from.js"></script>
+</body>
+</html>

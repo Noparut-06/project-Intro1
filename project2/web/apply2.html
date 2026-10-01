@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ข้อมูลการสมัครเข้ามหาวิทยาลัย | มจพ.</title>
+	<link rel="stylesheet" href="../style/styec.css">
+	<link rel="stylesheet" href="../style/media.css">
+	<link rel="stylesheet" href="../style/form.css">
+</head>
+<body class="application-page">
+	<header>
+		<img src="../image/logo_kmutnb-(6).png" alt="ตรามหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ">
+		<div class="university-name">
+			<h3>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h3>
+			<p>KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK</p>
+		</div>
+	</header>
+
+	<nav aria-label="เมนูหลัก">
+		<ul class="main-menu">
+			<li><a href="../index.html">หน้าแรก</a></li>
+			<li><a href="Organization.html">เรื่องราว</a></li>
+			<li class="dropdown">
+				<a href="#">ประวัติที่เกี่ยวข้องกับ มจพ. ▾</a>
+				<ul class="dropdown-menu">
+					<li><a href="story.html">มจพ.กรุงเทพ</a></li>
+					<li><a href="story2.html">มจพ.ปราจีน</a></li>
+					<li><a href="story3.html">มจพ.ระยอง</a></li>
+				</ul>
+			</li>
+			<li><a href="apply.html" aria-current="page">รับนักศึกษาใหม่</a></li>
+			<li><a href="price.html">วิธีชำระเงิน</a></li>
+		</ul>
+	</nav>
+
+	<main class="application-main">
+		<ol class="application-steps" aria-label="ลำดับการสมัคร">
+			<li><a href="apply.html">1. การศึกษาเดิม</a></li>
+			<li><a href="apply2.html" aria-current="step">2. ข้อมูลผู้สมัคร</a></li>
+			<li><a href="apply3.html">3. ผู้ปกครอง</a></li>
+		</ol>
+
+		<div class="application-heading">
+			<h1>ข้อมูลการสมัครเข้ามหาวิทยาลัย</h1>
+			<p>เลือกหลักสูตรที่ต้องการสมัครและกรอกข้อมูลส่วนตัวสำหรับติดต่อ</p>
+		</div>
+
+		<form class="application-form" method="post" data-application-step="applicant" data-next-page="apply3.html">
+			<fieldset>
+				<legend>สาขาและหลักสูตรที่สมัคร</legend>
+				<div class="form-grid">
+					<div class="form-field">
+						<label for="faculty">คณะ</label>
+						<select class="form-control" id="faculty" name="faculty" required>
+							<option value="">เลือกคณะ</option>
+							<option value="industry-management">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+							<option value="business-service">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+							<option value="digital-agriculture">คณะอุตสาหกรรมเกษตรดิจิทัล</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<label for="program">สาขาวิชา / หลักสูตร</label>
+						<select class="form-control" id="program" name="program" required disabled>
+							<option value="">เลือกคณะก่อน</option>
+						</select>
+						<p class="form-hint">รายการสาขาจะแสดงตามคณะที่เลือก</p>
+					</div>
+					<div class="form-field">
+						<label for="admission-round">โครงการ / รอบการรับสมัคร</label>
+						<select class="form-control" id="admission-round" name="admission_round" required>
+							<option value="">เลือกโครงการหรือรอบ</option>
+							<option>Portfolio</option>
+							<option>โควตา</option>
+							<option>รับตรง</option>
+							<option>อื่น ๆ</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<label for="study-session">ภาคการศึกษา</label>
+						<select class="form-control" id="study-session" name="study_session" required>
+							<option value="">เลือกภาคการศึกษา</option>
+							<option>ภาคปกติ</option>
+							<option>ภาคพิเศษ / เสาร์-อาทิตย์</option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>ข้อมูลส่วนตัวผู้สมัคร</legend>
+				<div class="form-grid">
+					<div class="form-field">
+						<label for="prefix">คำนำหน้าชื่อ</label>
+						<select class="form-control" id="prefix" name="prefix" required>
+							<option value="">เลือกคำนำหน้า</option>
+							<option>นาย</option>
+							<option>นาง</option>
+							<option>นางสาว</option>
+							<option>อื่น ๆ</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<label for="thai-first-name">ชื่อ (ภาษาไทย)</label>
+						<input class="form-control" id="thai-first-name" name="thai_first_name" type="text" autocomplete="given-name" required>
+					</div>
+					<div class="form-field">
+						<label for="thai-last-name">นามสกุล (ภาษาไทย)</label>
+						<input class="form-control" id="thai-last-name" name="thai_last_name" type="text" autocomplete="family-name" required>
+					</div>
+					<div class="form-field">
+						<label for="english-first-name">ชื่อ (ภาษาอังกฤษ)</label>
+						<input class="form-control" id="english-first-name" name="english_first_name" type="text" autocomplete="given-name" required>
+					</div>
+					<div class="form-field">
+						<label for="english-last-name">นามสกุล (ภาษาอังกฤษ)</label>
+						<input class="form-control" id="english-last-name" name="english_last_name" type="text" autocomplete="family-name" required>
+					</div>
+					<div class="form-field">
+						<label for="identity-type">ประเภทเอกสารประจำตัว</label>
+						<select class="form-control" id="identity-type" name="identity_type" required>
+							<option value="">เลือกประเภทเอกสาร</option>
+							<option value="national-id">บัตรประจำตัวประชาชน</option>
+							<option value="passport">หนังสือเดินทาง</option>
+						</select>
+					</div>
+					<div class="form-field">
+						<label for="identity-number">เลขประจำตัวประชาชน / เลขพาสปอร์ต</label>
+						<input class="form-control" id="identity-number" name="identity_number" type="text" autocomplete="off" required>
+						<p class="form-hint">เลขประจำตัวประชาชนให้กรอก 13 หลัก</p>
+					</div>
+					<div class="form-field">
+						<label for="birth-date">วัน / เดือน / ปีเกิด</label>
+						<input class="form-control" id="birth-date" name="birth_date" type="date" required>
+					</div>
+					<div class="form-field">
+						<label for="nationality">สัญชาติ</label>
+						<input class="form-control" id="nationality" name="nationality" type="text" required>
+					</div>
+					<div class="form-field">
+						<label for="ethnicity">เชื้อชาติ</label>
+						<input class="form-control" id="ethnicity" name="ethnicity" type="text" required>
+					</div>
+					<div class="form-field">
+						<label for="religion">ศาสนา</label>
+						<input class="form-control" id="religion" name="religion" type="text" required>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>ข้อมูลการติดต่อและที่อยู่</legend>
+				<div class="form-grid">
+					<div class="form-field">
+						<label for="applicant-phone">เบอร์โทรศัพท์มือถือ</label>
+						<input class="form-control" id="applicant-phone" name="applicant_phone" type="tel" autocomplete="tel" required>
+					</div>
+					<div class="form-field">
+						<label for="applicant-email">อีเมล</label>
+						<input class="form-control" id="applicant-email" name="applicant_email" type="email" autocomplete="email" required>
+					</div>
+					<div class="form-field">
+						<label for="house-number">บ้านเลขที่</label>
+						<input class="form-control" id="house-number" name="house_number" type="text" autocomplete="address-line1" required>
+					</div>
+					<div class="form-field">
+						<label for="village-number">หมู่</label>
+						<input class="form-control" id="village-number" name="village_number" type="text">
+					</div>
+					<div class="form-field">
+						<label for="road">ถนน</label>
+						<input class="form-control" id="road" name="road" type="text" autocomplete="address-line2">
+					</div>
+					<div class="form-field">
+						<label for="subdistrict">ตำบล / แขวง</label>
+						<input class="form-control" id="subdistrict" name="subdistrict" type="text" required>
+					</div>
+					<div class="form-field">
+						<label for="district">อำเภอ / เขต</label>
+						<input class="form-control" id="district" name="district" type="text" required>
+					</div>
+					<div class="form-field">
+						<label for="province">จังหวัด</label>
+						<input class="form-control" id="province" name="province" type="text" autocomplete="address-level1" required>
+					</div>
+					<div class="form-field">
+						<label for="postal-code">รหัสไปรษณีย์</label>
+						<input class="form-control" id="postal-code" name="postal_code" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" required>
+					</div>
+					<div>
+						<label for="applicant-house-registration-copy">สำเนาทะเบียนบ้านผู้สมัคร</label>
+						<input class="form-control" id="applicant-house-registration-copy" name="applicant_house_registration_copy" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+					</div>
+					<div>
+						<label for="applicant-identity-copy">สำเนาบัตรประชาชนผู้สมัคร</label>
+						<input class="form-control" id="applicant-identity-copy" name="applicant_identity_copy" type="file" accept=".pdf,.jpg,.jpeg,.png" required>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="application-actions">
+				<a class="application-button application-button--secondary" href="apply.html">ย้อนกลับ</a>
+				<div class="application-action-group">
+					<button class="application-button application-button--secondary" type="button" data-reset-application>รีเซ็ตข้อมูล</button>
+					<button class="application-button" type="submit">หน้าถัดไป: ผู้ปกครอง</button>
+				</div>
+			</div>
+		</form>
+	</main>
+	<script src="../JS/apply2.js"></script>
+	<script src="../JS/from.js"></script>
+</body>
+</html>
